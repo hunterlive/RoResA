@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Railstrapp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body><header style="width:100%; height: 50px; background: blue;"><%= link_to 'Home',  pages_index_path %>
+  <%= link_to 'Our Work', pages_work_path %>
+  <%= link_to 'What We Do', pages_capabilities_path %>
+  <%= link_to 'About Us', pages_about_path %>
+  <%= link_to 'Get In Touch',  pages_contact_path %></header>
+<%= yield %>
+
+</body>
+</html>
